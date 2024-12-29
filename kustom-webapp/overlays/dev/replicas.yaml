@@ -4,3 +4,10 @@ metadata:
   name: mywebapp
 spec:
   replicas: 3
+  template:
+    spec: # Pod spec
+      containers:
+      - name: mycontainer
+        image: "devopsjourney1/mywebapp:latest"
+        ports:
+        - containerPort: 80
